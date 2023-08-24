@@ -1,0 +1,20 @@
+.wrapper-about{
+    margin-top: var(--height-navbar);
+    overflow: hidden;
+}
+
+@media (max-width: 740px) {
+    .wrapper-about{
+        padding: 0px;
+    }
+}
+
+@media (min-width: 740px) and (max-width:1024px){
+    .wrapper-about{
+        padding: 0 0px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1300px){
+    
+}

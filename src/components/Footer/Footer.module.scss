@@ -1,0 +1,14 @@
+.wrapper-footer{
+    height: 80px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content{
+        color: white;
+        font-size: 1.8rem;
+        .comfysloth{
+            color: var(--primary);
+        }
+    }
+}

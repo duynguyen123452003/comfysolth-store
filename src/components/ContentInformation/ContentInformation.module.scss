@@ -1,0 +1,128 @@
+.wrapper-information {
+    padding: 0 20px;
+    .name-product {
+      font-size: 4rem;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .numStar {
+      margin-top: 8px;
+      .star-icon {
+        color: yellow;
+      }
+      .num-customer {
+        margin-left: 15px;
+      }
+    }
+    .price {
+      padding: 15px 0;
+      font-size: 2.1rem;
+      font-weight: bold;
+      color: #ab7a5f;
+    }
+    .content {
+      line-height: 3rem;
+    }
+    .infor {
+      padding: 10px 0;
+      .infor-title {
+        display: inline-block;
+        width: 130px;
+        font-weight: bold;
+      }
+      .infor-content{
+        text-transform: capitalize;
+      }
+    }
+    .color {
+      margin-top: 20px;
+      display: flex;
+      .color-title {
+        font-weight: bold;
+        margin-right: 60px;
+      }
+      .color-list {
+        display: flex;
+        justify-content: space-between;
+        .color-item {
+          cursor: pointer;
+          margin: 0 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          .icon-check{
+              display: none;
+          }
+        }
+        .active{
+          .icon-check{
+              display: block;
+          }
+      }
+      }
+    }
+    .stock {
+      margin-top: 10px;
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .add-product,
+      .remove-product {
+        font-size: 2rem;
+        font-weight: bold;
+        height: 30px;
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+      }
+      .num-stock {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+    }
+    .sold-out {
+      padding: 30px 0;
+      h1{
+        font-size: 4rem;
+        font-weight: bold;
+      }
+    }
+    .btn-add {
+      margin-top: 10px;
+      width: 30%;
+      background-color: #ab7a5f;
+      border: 0;
+      outline: none;
+      color: white;
+      padding: 5px 5px;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      &:hover {
+        background-color: #c5a491;
+        color: #453227;
+        transition: all linear 0.3s;
+      }
+    }
+  }
+
+
+  @media (max-width: 740px) {
+    .wrapper-information{
+        padding: 0;
+    }
+  }
+  
+  @media (min-width: 740px) and (max-width: 1024px) {
+    .wrapper-information{
+        padding: 0;
+    }
+  }
+  

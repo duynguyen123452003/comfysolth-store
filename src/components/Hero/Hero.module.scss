@@ -1,0 +1,109 @@
+.wrapper-content {
+  color: var(--font-color);
+  padding: 100px 0px 70px 0px;
+}
+
+.design-heading {
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.design-text {
+  font-size: 2rem;
+  line-height: 4rem;
+  padding: 50px 0;
+  color: #617d98;
+}
+
+.btn-shopw_now {
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: white;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  &:hover {
+    background-color: #c5a491;
+    color: black;
+  }
+}
+
+.image {
+  display: flex;
+  justify-content: end;
+}
+
+.image-list {
+  position: relative;
+  width: 440px;
+  height: 550px;
+  padding: 10px 0;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #decbc0;
+    height: 80%;
+    width: 10%;
+    bottom: 0;
+    left: -7%;
+    border-radius: 5px;
+    z-index: 0;
+  }
+}
+
+.image-first_item {
+  position: absolute;
+  height: 550px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.image-second_item {
+  position: absolute;
+  width: 250px;
+  bottom: -10px;
+  left: -50%;
+  transform: translateX(50%);
+  border-radius: 5px;
+  z-index: 2;
+}
+
+@media (max-width: 740px) {
+  .wrapper-content {
+    padding: 20px 0;
+  }
+  .design-text {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 25px 0;
+  }
+  .btn-shopw_now {
+    padding: 5px 15px;
+  }
+  .image-list {
+    display: none;
+  }
+  .design-heading{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .wrapper-content {
+    padding: 20px 0;
+  }
+  .design-text {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    padding: 25px 0;
+  }
+  .btn-shopw_now {
+    padding: 5px 15px;
+  }
+  .image-list {
+    display: none;
+  }
+}

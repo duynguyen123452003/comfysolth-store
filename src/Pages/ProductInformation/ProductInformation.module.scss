@@ -1,0 +1,49 @@
+.wrapper-product {
+  margin-top: var(--height-navbar);
+  overflow: hidden;
+  display: block;
+}
+.wrapper-information{
+    padding-bottom: 40px !important;
+    .wrapper-btn_back{
+      padding: 0 20px;
+      display: block;
+      margin-bottom: 50px;
+      .btn-back{
+        background-color: #ab7a5f;
+        border: 0;
+        outline: none;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        &:hover {
+          background-color: #c5a491;
+          color: #453227;
+          transition: all linear 0.3s;
+        }
+      }
+    }
+    .loading{
+      height: 210px;
+    }
+}
+
+
+@media (max-width: 740px) {
+  .wrapper-information {
+    padding: 0 25px;
+    .wrapper-btn_back{
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+  .wrapper-information {
+    padding: 0 25px;
+    .wrapper-btn_back{
+      padding: 0;
+    }
+  }
+}

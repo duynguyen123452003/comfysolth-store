@@ -1,0 +1,52 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #AB7A5F;
+    --font-color: #102a42;
+    --height-navbar: 100px;
+    --service-color: #453227;
+    --bg-service: #eaded7;
+    --bg-service-item: #c5a491;
+    --font-color-category: #617d98;
+    --font-color-price: #b99179;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+a{
+    text-decoration: none;
+    color: #102a42;
+}
+
+.wrapper{
+    padding: 0 90px;
+    margin-top: var(--height-navbar);
+}
+
+
+@media (max-width: 740px) {
+    .wrapper{
+        padding: 0 25px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .wrapper{
+        padding: 0 25px;
+    }
+}

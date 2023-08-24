@@ -1,0 +1,103 @@
+.wrapper-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-100%);
+  padding: 20px 0px;
+  color: var(--font-color);
+  z-index: 101;
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    .nav-mobile_logo {
+      object-fit: cover;
+      width: 175px;
+      cursor: pointer;
+    }
+    .btn-close {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-weight: bold;
+      font-size: 4rem;
+      color: rgba(165, 2, 2);
+      &:hover {
+        color: rgba(165, 2, 2, 0.7);
+      }
+    }
+  }
+  .nav-mobile {
+    .nav-mobile_list {
+      list-style: none;
+      padding: 0;
+    }
+    .nav-mobile_item {
+      padding: 20px 20px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(219, 219, 219, 0.4);
+      }
+      .nav-content {
+        display: block;
+      }
+      &:hover .nav-content {
+        animation: animate_navbar ease 0.8s forwards;
+      }
+    }
+  }
+  .action-mobile {
+    display: flex;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    justify-content: center;
+    .action-mobile-item {
+      margin: 20px;
+      cursor: pointer;
+      position: relative;
+      .cart-mobile_number {
+        position: absolute;
+        background-color: var(--primary);
+        width: 20px;
+        height: 20px;
+        top: -7px;
+        right: -10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+  }
+}
+
+.navbar-open {
+    animation: slip ease 0.3s forwards;
+}
+
+.navbar-close {
+    animation: slip-reverse ease 0.3s forwards;
+}
+
+@keyframes slip {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slip-reverse {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
